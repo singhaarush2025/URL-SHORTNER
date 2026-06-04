@@ -23,6 +23,25 @@ if (!inputURL) {
     return;
   }
  console.log("Valid URL:", inputURL);
+  const submiti=document.querySelector(".submit");
+const tbody=document.querySelector(".table-body")
+
+
+submiti.addEventListener("click",()=>{
+  const ogURL=document.querySelector(".search").value;
+  const shortURL = "https://sl.ink/" + Math.random().toString(36).slice(2, 7);
+  const date=new Date();
+ const row=document.createElement("tr");
+ row.innerHTML=`<td>${ogURL}</td> 
+                <td>${shortURL}</td>
+                <td><p>0</p></td>
+                <td>${date.toLocaleDateString()}</td>
+                <td> <i class="fa-solid fa-qrcode"></td>
+                <td><i class="fa-solid fa-copy"></i></td>`;
+
+ tbody.append(row);
+});
+
 });
 
 
@@ -49,23 +68,3 @@ qr_code.addEventListener("click",()=>{
 
 
 
-
-//table
-const submiti=document.querySelector(".submit");
-const tbody=document.querySelector(".table-body")
-
-
-submiti.addEventListener("click",()=>{
-  const ogURL=document.querySelector(".search").value;
-  const shortURL = "https://sl.ink/" + Math.random().toString(36).slice(2, 7);
-  const date=new Date();
- const row=document.createElement("tr");
- row.innerHTML=`<td>${ogURL}</td> 
-                <td>${shortURL}</td>
-                <td><p>0</p></td>
-                <td>${date.toLocaleDateString()}</td>
-                <td> <i class="fa-solid fa-qrcode"></td>
-                <td><i class="fa-solid fa-copy"></i></td>`;
-
- tbody.append(row);
-});
