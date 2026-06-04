@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -114,26 +115,25 @@
     <table class="history-table">
         <thead>
             <tr>
-                <th>Short URL</th>
-                <th>Original URL</th>
-                <th>Clicks</th>
-                <th>Date</th>
-                <th>QR</th>
-                <th>Actions</th>
+                <th class=" og-url">Original URL</th>
+                <th class="short-url">Short URL</th>
+                <th class="clicks">Clicks</th>
+                <th class="date">Date</th>
+                <th class="qr">QR</th>
+                <th class="Copy">Copy</th>
             </tr>
         </thead>
 
-        <tbody>
-            <tr class="empty-row">
-                <td colspan="6">No links shortened yet.</td>
-            </tr>
+        <tbody class="table-body">
+            
         </tbody>
     </table>
 
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.4.4/qrcode.js" integrity="sha512-oxrVyBhqnzQ0BzuM0A/6dEIk0alz0p4SpDRaWvtuUoarIc8rnL5lVniHG5Dp21MRFojcQcmKHjaskNXhSaUPPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  
 </body>
-</html>
-=======
 
->>>>>>> c3ac0ef5da29aa9e2977ba6934c8d51fbe2502f2
+</html>
+
